@@ -1,8 +1,6 @@
 name: Calls custom_action_sandbox
 on:
   push:
-    tags:
-      - "test" 
 
 jobs:
   provision_resources:

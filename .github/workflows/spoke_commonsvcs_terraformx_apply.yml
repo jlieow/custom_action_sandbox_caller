@@ -1,0 +1,20 @@
+name: Calls custom_action_sandbox
+on:
+  push:
+    tags:
+      - "test" 
+
+jobs:
+  provision_resources:
+    runs-on: ubuntu-latest
+    name: Calls custom_action_sandbox
+    steps:
+      - name: Perform Terraformx Apply
+        id: terraformx_apply
+        uses: jlieow/custom_action_sandbox@V1 
+        with:
+          terraform_env_variables: |
+            key=value,
+            test=this,
+            hello=world
+            

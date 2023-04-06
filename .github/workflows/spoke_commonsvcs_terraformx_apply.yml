@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Calls custom_action_sandbox
     steps:
-      - name: Perform Terraformx Apply
-        id: terraformx_apply
+      - id: custom_action_sandbox_caller
         uses: jlieow/custom_action_sandbox@V1 
         with:
           terraform_env_variables: |

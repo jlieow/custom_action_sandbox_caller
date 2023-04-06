@@ -11,13 +11,13 @@ jobs:
         uses: jlieow/custom_action_sandbox@V1 
         with:
           terraform_env_variables: |
-            TF_CLI_ARGS_init="-backend-config='bucket=bucket_name'"
-            TF_VAR_aws_account_id="aws_account_id"
-            TF_VAR_default_domain="default_domain"
+            TF_CLI_ARGS_init=-backend-config='bucket=bucket_name'
+            TF_VAR_aws_account_id=aws_account_id
+            TF_VAR_default_domain=default_domain
 
-            TF_VAR_alb_log_bucket_name="alb_log_bucket_name"
-            TF_VAR_network_firewall_log_bucket_name="network_firewall_log_bucket_name"
-            TF_VAR_session_manager_log_bucket_name="session_manager_log_bucket_name"
-            TF_VAR_waf_log_bucket_name="waf_log_bucket_name"
-            TF_VAR_certificate_manager_cert_id="certificate_manager_cert_id"
+            TF_VAR_alb_log_bucket_name=alb_log_bucket_name
+            TF_VAR_network_firewall_log_bucket_name=network_firewall_log_bucket_name
+            TF_VAR_session_manager_log_bucket_name=session_manager_log_bucket_name
+            TF_VAR_waf_log_bucket_name=waf_log_bucket_name
+            TF_VAR_certificate_manager_cert_id=certificate_manager_cert_id
             
